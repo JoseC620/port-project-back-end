@@ -30,12 +30,10 @@ const getAReview = async (id) => {
   
   
 const addAReview = async (review) => {
-    const { title, reviewer, content, products_id } = review;
-  
     try {
       const newReview = await db.one(
         "INSERT INTO reviews (title, reviewer, content, products_id) VALUES($1, $2, $3, $4) RETURNING *",
-        [title, reviewer, content, products_id]
+        [review.title, review.reviewer, review.content, review.products_id]
       );
       return newReview;
     } catch (error) {
@@ -45,10 +43,7 @@ const addAReview = async (review) => {
   
 const deleteReview = async (id) => {
     try {
-      const deletedReview = await db.one(
-        "DELETE FROM reviews WHERE id = $1 RETURNING *",
-        id
-      );
+      const deletedReview = await db.one("DELETE FROM reviews WHERE id=$1 RETURNING *", id);
       return deletedReview;
     } catch (error) {
       return error;

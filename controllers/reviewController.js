@@ -19,7 +19,7 @@ reviews.get("/:id", async (req, res) => {
   if (review) {
     res.json(review);
   } else {
-    res.status(404).json({ error: "not found" });
+    res.status(404).json({ error: "Review not found" });
   }
 });
 
@@ -45,6 +45,7 @@ reviews.post("/", async (req, res) => {
 
 reviews.delete("/:id", async (req, res) => {
   const { id } = req.params;
+  console.log(id)
 
   const deletedReview = await deleteReview(id);
   if (deletedReview.id) {

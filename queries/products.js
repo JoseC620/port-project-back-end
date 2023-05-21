@@ -12,8 +12,8 @@ const getAllProducts = async () => {
 
 const getProduct = async (id) => {
   try {
-      const Product = await db.one("SELECT * FROM products WHERE id=$1", id);  
-      return Product;
+      const product = await db.one("SELECT * FROM products WHERE id=$1", id);  
+      return product;
   } catch (error) {
       return error;
   }
