@@ -10,7 +10,7 @@ INSERT INTO products (name, image, category, manufacturer, cost, rating, inStock
     ('MacBook Pro', 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp14-spacegray-select-202301?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1671304673229', 'Electronics', 'Apple', 1999.99, 4.7, true),
     ('LG 4K UHD Monitor', 'https://m.media-amazon.com/images/I/71819szMM8L._AC_SX679_.jpg', 'Electronics', 'LG', 499.99, 4.4, true),
     ('Dell XPS 13', 'https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-13-9315/media-gallery/notebook-xps-9315-nt-blue-gallery-3.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=575&qlt=100,1&resMode=sharp2&size=575,402&chrss=full', 'Electronics', 'Dell', 1299.99, 4.5, true),
-    ('Nike Zoom Pegasus', 'https://dks.scene7.com/is/image/GolfGalaxy/22NIKMPGSS39RGMNTRNN_Black_White_Smoke_Grey?qlt=70&wid=992&fmt=webp', 'Footwear', 'Nike', 99.99, 4.2, true),
+    ('Nike Zoom Pegasus', 'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/a96f62d4-b20a-4371-a660-38565bc4581b/pegasus-39-mens-road-running-shoes-jXTgc9.png', 'Footwear', 'Nike', 99.99, 4.2, true),
     ('Sony WH-1000XM4', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6408/6408356cv11d.jpg;maxHeight=2000;maxWidth=2000', 'Electronics', 'Sony', 349.99, 4.8, true),
     ('Samsung Galaxy S21', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6472/6472892cv18d.jpg;maxHeight=640;maxWidth=550', 'Electronics', 'Samsung', 799.99, 4.6, true),
     ('Puma RS-X', 'https://images.footlocker.com/is/image/EBFL2/38989601_a1?wid=500&hei=500&fmt=png-alpha', 'Footwear', 'Puma', 89.99, 4.1, true),
