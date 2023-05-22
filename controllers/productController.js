@@ -50,7 +50,7 @@ products.delete('/:id', async (req, res) => {
 products.put('/:id', checkProductName, async (req, res) => {
     const { id } = req.params;
     try {
-        const updatedProduct = await updateProduct(id, req.body);
+        const updatedProduct = await updateProduct(req.body, id);
         res.status(200).json(updatedProduct);
     } catch (error){
         res.status(400).json({ error: "Sorry! Product could not be updated" });

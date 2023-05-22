@@ -38,12 +38,12 @@ const deleteProduct = async (id) => {
   };
 };
 
-const updateProduct = async (id, product) => {
+const updateProduct = async (product, id) => {
 
   try {
       const updatedProduct = await db.any(
-      "UPDATE products SET name=$1, image=$2, category=$3, manufacturer=$4, cost=$5, rating=$6, inStock=$7, where id=$8 RETURNING *",
-      [product.name, product.image, product.category, product.manufacturer, product.cost, product.rating, product.inStock, id]
+      "UPDATE products SET name=$1, image=$2, category=$3, manufacturer=$4, cost=$5, rating=$6, inStock=$7 WHERE id=$8 RETURNING *",
+      [product.name, product.image, product.category, product.manufacturer, product.cost, product.rating, product.instock, id]
       );
       return updatedProduct;
   } catch (error) {
